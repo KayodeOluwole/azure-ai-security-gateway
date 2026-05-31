@@ -31,6 +31,7 @@ Log Analytics Workspace
 Microsoft Sentinel
 
 Technologies Used
+
 Identity & Access Management
 Microsoft Entra ID
 OAuth 2.0
@@ -38,60 +39,73 @@ OpenID Connect (OIDC)
 JWT Authentication
 
 AI Platform
+
 Azure AI Foundry
 Phi-4 Model
 
 API Security
+
 Azure API Management
 APIM Policies
 Rate Limiting
 Request Inspection
 
 Secrets Management
+
 Azure Key Vault
 Managed Identity
 
 Network Security
+
 Virtual Networks (VNET)
 Private Endpoints
 Private DNS Zones
 Network Security Groups (NSGs)
 
 Monitoring & Detection
+
 Azure Monitor
 Log Analytics Workspace
 Microsoft Sentinel
 AzureDiagnostics Logs
 
 Security Controls Implemented
+
 1. JWT Authentication
 APIM validates Microsoft Entra ID access tokens before allowing access to the AI model.
 
 Protection Against
+
 Unauthorized access
 Token misuse
 Anonymous requests
 
 Result
+
 Requests without valid tokens receive:
 HTTP 401 Unauthorized
 
 2. Rate Limiting
+3. 
 APIM rate limiting was configured to restrict excessive requests.
 
 Protection Against
+
 AI abuse
 Brute force attempts
 Cost exhaustion attacks
 Denial of Service
 
 Configuration
+
 20 requests per minute per source IP.
 
 3. Prompt Injection Protection
+4. 
 The gateway inspects incoming prompts for prompt injection patterns.
 
 Examples Blocked
+
 Ignore previous instructions
 Reveal your system prompt
 Bypass policy
@@ -101,12 +115,15 @@ Hidden instructions
 Developer debugging mode
 
 Result
+
 HTTP 403 Forbidden
 
 4. Sensitive Data Protection (AI DLP)
+   
 The gateway blocks prompts containing sensitive information.
 
 Examples Blocked
+
 Passwords
 Secrets
 API Keys
@@ -115,6 +132,7 @@ Social Insurance Numbers (SIN)
 SSN
 
 Result
+
 HTTP 403 Forbidden
 
 5. Credential Exposure Protection
@@ -131,6 +149,7 @@ Result
 HTTP 403 Forbidden
 
 6. Source Code & Cryptographic Material Protection
+7. 
 The gateway blocks source code and cryptographic artifacts.
 
 Examples Blocked
