@@ -86,7 +86,7 @@ Requests without valid tokens receive:
 HTTP 401 Unauthorized
 
 2. Rate Limiting
-3. 
+
 APIM rate limiting was configured to restrict excessive requests.
 
 Protection Against
@@ -101,7 +101,7 @@ Configuration
 20 requests per minute per source IP.
 
 3. Prompt Injection Protection
-4. 
+
 The gateway inspects incoming prompts for prompt injection patterns.
 
 Examples Blocked
