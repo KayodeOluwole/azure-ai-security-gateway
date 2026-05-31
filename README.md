@@ -149,7 +149,7 @@ Result
 HTTP 403 Forbidden
 
 6. Source Code & Cryptographic Material Protection
-7. 
+   
 The gateway blocks source code and cryptographic artifacts.
 
 Examples Blocked
