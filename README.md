@@ -5,6 +5,7 @@ This project demonstrates the design and implementation of a secure Azure AI pla
 The objective was to build a production-style AI Security Gateway capable of enforcing authentication,network isolation, prompt security controls, data loss prevention (DLP), secret protection, monitoring, andthreat detection for Large Language Models (LLMs).
 
 Architecture
+
 User/Application
 ↓
 Microsoft Entra ID
