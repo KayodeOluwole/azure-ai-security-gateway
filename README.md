@@ -217,6 +217,7 @@ Status:
 Prompt Injection Protection Successful
 
 Monitoring & Logging
+
 Logs are collected through:
 AzureDiagnostics
 Log Analytics Workspace
@@ -224,6 +225,7 @@ Microsoft Sentinel
 
 
 Monitored Events:
+
 Prompt Injection Attempts
 Unauthorized Access Attempts
 DLP Violations
@@ -231,12 +233,14 @@ Gateway Activity
 Authentication Failures
 
 Threat Modeling
+
 Frameworks Applied:
 STRIDE
 OWASP Top 10 for LLMs
 MITRE ATT&CK
 
 Key Risks Addressed:
+
 Prompt Injection
 Sensitive Data Disclosure
 Credential Leakage
@@ -245,6 +249,7 @@ Denial of Service
 Secret Exposure
 
 Lessons Learned
+
 AI systems require layered security controls.
 Prompt injection remains one of the highest risks to LLM deployments.
 Private Endpoints significantly reduce exposure.
@@ -253,6 +258,7 @@ AI security requires both preventive and detective controls.
 Defense-in-depth is essential for AI platforms.
 
 Future Enhancements
+
 Azure AI Content Safety Integration
 AI Agent Security Controls
 Tool Abuse Protection
@@ -263,8 +269,10 @@ Advanced Sentinel Analytics Rules
 
 Author
 Kayode Oluwole Isaiah
+
 Cybersecurity | IAM | Cloud Security | AI Security Architecture
 Project Focus:
 Secure Design and Implementation of Enterprise AI Platforms on Microsoft Azure
-8# azure-ai-security-gateway
+
+# azure-ai-security-gateway
 Enterprise AI Security Gateway using Azure AI Foundry, APIM, Entra ID, Key Vault, Private Endpoints, and Sentinel.
