@@ -1,0 +1,29 @@
+HTTP request
+ 
+POST https://apim-ai-security-prod.azure-api.net/ai/chat/completions HTTP/1.1
+Host: apim-ai-security-prod.azure-api.net
+Content-Type: application/json
+
+{
+  "model":"Phi-4",
+  "messages":[
+    {
+      "role":"user",
+      "content":"Say OK"
+    }
+  ]
+}
+HTTP response
+•	Message
+•	! Trace
+•	Generate definition
+HTTP/1.1 401 Unauthorized
+content-length: 48
+content-type: application/json
+date: Sun, 31 May 2026 17:32:31 GMT
+vary: Origin
+    {
+    "statusCode": 401,
+    "message": "Unauthorized"
+}
+
